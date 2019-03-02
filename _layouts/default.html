@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
     <!-- Js -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -68,9 +68,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    {% include footernav.html %}
-                    <p>Copyright &copy; Design & Developed by
-                        <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+                    {% include about/about.html %}
+                </div>
+
+                <hr>
+                    
+                <div class = "row">
+                    <div class = "col-md-12">
+                        <h4>Connect with me!</h4>
+                    </div>
+                    <div class = "col-md-12">
+                        {% include socialicons.html %}
+                        <p>Copyright &copy; Design & Developed by
+                            <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+                    </div>  
                 </div>
             </div>
         </div>
