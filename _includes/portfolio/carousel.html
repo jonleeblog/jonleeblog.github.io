@@ -1,44 +1,21 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-        {% assign first = true %}
-        {% assign count = 0 %}
-
-        {% for project in site.data.mcpt %}
-        
-        {% if first == true %}
-            <li data-target="#myCarousel" data-slide-to="{{count}}" class="active"></li>
-            {% assign first = false %}
-        {% else %}
-            <li data-target="#myCarousel" data-slide-to="{{count}}"></li>
-        {% endif %}
-            
-        {% assign count = count +  1 %}
-        {% endfor %}
-        
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-        {% assign first = true %}
-
-        {% for project in site.data.mcpt %}
-        
-        {% if first == true %}
-            <div class="item active">
-                <img src="{{ project.img }}" alt="{{ project.title }}">
-            </div>
     
-            {% assign first = false %}
-        {% else %}
-            <div class="item">
-                <img src="{{ project.img }}" alt="{{ project.title }}">
-            </div>
-        {% endif %}
+    {% if page.url == "/projects/mcpt.html" %}
+        {% include portfolio/carousels/mcpt-carousel.html %}
+    {% endif %}    
 
-        {% endfor %}
-    </div>
+    {% if page.url == "/projects/heatstroke.html" %}
+        {% include portfolio/carousels/heatstroke-carousel.html %}
+    {% endif %}    
+    
+    {% if page.url == "/projects/teachin.html" %}
+        {% include portfolio/carousels/teachin-carousel.html %}
+    {% endif %}    
+
+    {% if page.url == "/projects/staywoke.html" %}
+        
+    {% endif %}    
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">

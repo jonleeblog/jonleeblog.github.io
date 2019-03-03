@@ -1,0 +1,38 @@
+<ol class="carousel-indicators">
+{% assign first = true %}
+{% assign count = 0 %}
+
+{% for project in site.data.teachin %}
+
+{% if first == true %}
+    <li data-target="#myCarousel" data-slide-to="{{count}}" class="active"></li>
+    {% assign first = false %}
+{% else %}
+    <li data-target="#myCarousel" data-slide-to="{{count}}"></li>
+{% endif %}
+    
+{% assign count = count +  1 %}
+{% endfor %}
+
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+{% assign first = true %}
+
+{% for project in site.data.teachin  %}
+
+{% if first == true %}
+    <div class="item active">
+        <img src="{{ project.img }}" alt="{{ project.title }}">
+    </div>
+
+    {% assign first = false %}
+{% else %}
+    <div class="item">
+        <img src="{{ project.img }}" alt="{{ project.title }}">
+    </div>
+{% endif %}
+
+{% endfor %}
+</div>
