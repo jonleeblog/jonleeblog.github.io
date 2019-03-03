@@ -1,0 +1,29 @@
+<ul id="project-links">
+<li class="project-link">
+    <a href = "{{ page.repo }}">Repo</a>
+</li>
+
+{% if page.demo %}
+<li class="project-link">
+    <a href = "{{ page.demo }}">Live Demo</a>
+</li>
+{% endif %}
+
+{% if page.video %}
+<li class="project-link">
+    <a href = "{{ page.video }}">Video</a>
+</li>
+{% endif %}
+
+{% if page.appstore %}
+<li class="project-link">
+    <a href = "{{ page.appstore }}">App Store</a>
+</li>
+{% endif %}
+
+{% if page.googleplay %}
+<li class="project-link">
+    <a href = "{{ page.googleplay }}">Google Play</a>
+</li>
+{% endif %}
+</ul>

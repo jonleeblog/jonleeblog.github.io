@@ -6,7 +6,7 @@ layout: default
 <section id="project">
     <div class="container">
         {% if page.title %}
-        <h3>{{ page.title }} |
+        <h3>{{ page.title }} | 
             <small>{{ page.techstack }}</small>
         </h3>
         <hr>
@@ -15,7 +15,11 @@ layout: default
         <div class="row">
             <div class="col-md-6">
                 <div class="block">
+                    {% if page.carousel == true %}
                     {% include portfolio/carousel.html %}
+                    {% else %}
+                    {% include portfolio/frame.html %}
+                    {% endif %}
                 </div>
             </div>
 
@@ -27,35 +31,7 @@ layout: default
                 </div>
 
                 <div class="block"></div>
-                    <ul id="project-links">
-                        <li class="project-link">
-                            <a href = "{{ page.repo }}">Repo</a>
-                        </li>
-
-                        {% if page.demo %}
-                        <li class="project-link">
-                            <a href = "{{ page.demo }}">Live Demo</a>
-                        </li>
-                        {% endif %}
-
-                        {% if page.video %}
-                        <li class="project-link">
-                            <a href = "{{ page.video }}">Video</a>
-                        </li>
-                        {% endif %}
-
-                        {% if page.appstore %}
-                        <li class="project-link">
-                            <a href = "{{ page.appstore }}">App Store</a>
-                        </li>
-                        {% endif %}
-
-                        {% if page.googleplay %}
-                        <li class="project-link">
-                            <a href = "{{ page.googleplay }}">Google Play</a>
-                        </li>
-                        {% endif %}
-                    </ul>
+                    {% include portfolio/projectlinks.html %}
                 </div>
             </div>
         </div>

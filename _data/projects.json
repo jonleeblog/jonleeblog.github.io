@@ -2,37 +2,43 @@
     {
         "category" : "Branding",
         "img" : "img/portfolio/work1.jpg",
-        "title" : "Tesla Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
-    },
-    {
-        "category" : "Branding",
-        "img" : "img/portfolio/work2.jpg",
-        "title" : "Tesla Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
-    },
-    {
-        "category" : "Branding",
-        "img" : "img/portfolio/work3.jpg",
-        "title" : "Tesla Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
+        "title" : "Monte Carlo Path Tracer",
+        "link" : "/projects/mcpt.html",
+        "content" : "Physically-Based Renderer written in C++"
     },
     {
         "category" : "Branding",
         "img" : "img/portfolio/work4.jpg",
-        "title" : " Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
+        "title" : "Wave",
+        "link" : "/projects/wave.html",
+        "content" : "Flip/PIC fluid simulator written in C++"
+    },
+    {
+        "category" : "Branding",
+        "img" : "img/portfolio/work2.jpg",
+        "title" : "ScavengAR Hunt",
+        "link" : "/projects/teachin.html",
+        "content" : "AR scavenger hunt made for Penn's 2018 Teach-In Event"
+    },
+    {
+        "category" : "Branding",
+        "img" : "img/portfolio/work3.jpg",
+        "title" : "Stay Woke",
+        "link" : "/projects/staywoke.html",
+        "content" : "VR game where you must escape the wrath of a ferocious bear"
+    },
+    {
+        "category" : "Branding",
+        "img" : "img/portfolio/work4.jpg",
+        "title" : "Sticky Bun",
+        "link" : "/projects/stickybun.html",
+        "content" : "FEM jello simulator written in C++ and rendered in Houdini"
     },
     {
         "category" : "Branding",
         "img" : "img/portfolio/work5.jpg",
-        "title" : "Tesla Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
-    },
-    {
-        "category" : "Branding",
-        "img" : "img/portfolio/work6.jpg",
-        "title" : "Tesla Motors",
-        "content" : "Labore et dolore magna aliqua. Ut enim ad"
+        "title" : "Heatstroke",
+        "link" : "/projects/heatstroke.html",
+        "content" : "Real-time volumetric renderer written in WebGL and JavaScript"
     }
 ]
