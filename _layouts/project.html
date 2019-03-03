@@ -1,0 +1,51 @@
+--- 
+layout: default
+---
+
+<hr>
+<section id="project">
+    <div class="container">
+        {% if page.title %}
+        <h3>{{ page.title }} |
+            <small>{{ page.techstack }}</small>
+        </h3>
+        <hr>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="block">
+                    {% include portfolio/carousel.html %}
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="block">
+                    <p>
+                        {{ content }}
+                    </p>
+                </div>
+
+                <div class="block"></div>
+                    <ul id="project-links">
+                        <li class="project-link">
+                            <a href = "{{ page.repo }}">Repo</a>
+                        </li>
+
+                        {% if page.demo %}
+                        <li class="project-link">
+                            <a href = "{{ page.demo }}">Live Demo</a>
+                        </li>
+                        {% endif %}
+
+                        {% if page.video %}
+                        <li class="project-link">
+                            <a href = "{{ page.video }}">Video</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

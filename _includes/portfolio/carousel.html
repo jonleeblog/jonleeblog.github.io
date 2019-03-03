@@ -1,0 +1,50 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        {% assign first = true %}
+        {% assign count = 0 %}
+
+        {% for project in site.data.mcpt %}
+        
+        {% if first == true %}
+            <li data-target="#myCarousel" data-slide-to="{{count}}" class="active"></li>
+            {% assign first = false %}
+        {% else %}
+            <li data-target="#myCarousel" data-slide-to="{{count}}"></li>
+        {% endif %}
+            
+        {% assign count = count +  1 %}
+        {% endfor %}
+        
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+        {% assign first = true %}
+
+        {% for project in site.data.mcpt %}
+        
+        {% if first == true %}
+            <div class="item active">
+                <img src="{{ project.img }}" alt="{{ project.title }}">
+            </div>
+    
+            {% assign first = false %}
+        {% else %}
+            <div class="item">
+                <img src="{{ project.img }}" alt="{{ project.title }}">
+            </div>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
