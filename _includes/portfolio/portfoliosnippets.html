@@ -2,38 +2,17 @@
 <section id="portfolio-work">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <!-- <div class="portfolio-menu">
-                        <ul>
-                            <li class="filter" data-filter="all">Everything</li>
-                            <li class="filter" data-filter=".Branding">Branding</li>
-                            <li class="filter" data-filter=".Websites">Websites</li>
-                            <li class="filter" data-filter=".Graphic">Graphic</li>
-                            <li class="filter" data-filter=".design">design</li>
-                            <li class="filter" data-filter=".Video">Video</li>
-                        </ul>
-                    </div> -->
-                    <div class="portfolio-contant">
-                        <ul id="portfolio-contant-active">
-                            {% for project in site.data.projects %}
-                            <li class="mix {{ project.category }}">
-                                    <a href="{{ project.link }}">
-                                        <img src="{{ project.img }}" alt="">
-                                        <div class="overly">
-                                            <div class="position-center">
-                                                <h2>{{ project.title }}</h2>
-                                                <p>{{ project.content }}</p>
-    
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
+            {% for project in site.data.projects %}
+            <div class = "col-md-4" id="portfolio-content">
+                <a href="{{ project.link }}">
+                    <img src="{{ project.img }}" alt="">
+                </a>
+                <span>
+                    <h2>{{ project.title }}</h2>
+                    <small>{{ project.content }}</small>
+                </span>
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>

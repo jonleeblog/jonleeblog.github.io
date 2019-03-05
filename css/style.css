@@ -59,7 +59,7 @@ a:active {
 --*/
 header {
   background: #fff;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
 }
 header .navbar {
   margin-bottom: 0px;
@@ -551,6 +551,20 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .mix {
   display: none;
+}
+
+#portfolio-content 
+{
+  padding: 0 25px 50px 25px;
+  height: 500px;
+}
+#portfolio-content img
+{
+  width: 300px;
+}
+#portfolio-content small
+{
+  font-size: 15px;
 }
 /*--
 	wrapper-work Start 
