@@ -67,7 +67,6 @@ layout: default
 
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
-
                 <!-- Blog Categories Well -->
                 <div class="well">
                     {% for category_name in page.categories limit:1 %}
@@ -84,12 +83,6 @@ layout: default
                     {%endfor%}
                     <!-- /.row -->
                 </div>
-
-                <!-- Side Widget Well -->
-                <div class="well">
-                    {% include contact/contactinfo.html %}
-                </div>
-
             </div>
 
         </div>

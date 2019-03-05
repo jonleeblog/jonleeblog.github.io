@@ -556,15 +556,27 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-content 
 {
   padding: 0 25px 50px 25px;
-  height: 500px;
+  height: 400px;
 }
 #portfolio-content img
 {
   width: 300px;
+  height: 200px;
 }
 #portfolio-content small
 {
   font-size: 15px;
+}
+
+#artwork-content
+{
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+#artwork-content img
+{
+  width: 200px;
+  height: 200px;
 }
 /*--
 	wrapper-work Start 
@@ -850,4 +862,9 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+#clear-div
+{
+  padding-bottom: 50px;
 }

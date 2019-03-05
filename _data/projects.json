@@ -1,36 +1,36 @@
 [
     {
-        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/dragon_32_5.png",
+        "img" : "img/thumbs/thumb_dragon.png",
         "title" : "Monte Carlo Path Tracer",
         "link" : "/projects/mcpt.html",
         "content" : "Physically-Based Renderer written in C++"
     },
     {
-        "img" : "img/fluid.gif",
+        "img" : "img/thumbs/thumb_fluid.png",
         "title" : "Wave",
         "link" : "/projects/wave.html",
         "content" : "Flip/PIC fluid simulator written in C++"
     },
     {
-        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/dragon_32_5.png",
+        "img" : "img/thumbs/thumb_teachin.png",
         "title" : "ScavengAR Hunt",
         "link" : "/projects/teachin.html",
         "content" : "AR scavenger hunt made for Penn's 2018 Teach-In Event"
     },
     {
-        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/dragon_32_5.png",
+        "img" : "img/thumbs/thumb_staywoke.png",
         "title" : "Stay Woke",
         "link" : "/projects/staywoke.html",
         "content" : "VR game where you must escape the wrath of a ferocious bear"
     },
     {
-        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/dragon_32_5.png",
+        "img" : "img/thumbs/thumb_jello.png",
         "title" : "Sticky Bun",
         "link" : "/projects/stickybun.html",
         "content" : "FEM jello simulator written in C++ and rendered in Houdini"
     },
     {
-        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/dragon_32_5.png",
+        "img" : "img/thumbs/thumb_heatstroke.png",
         "title" : "Heatstroke",
         "link" : "/projects/heatstroke.html",
         "content" : "Real-time volumetric renderer written in WebGL and JavaScript"
