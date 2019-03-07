@@ -2,23 +2,33 @@
 <section id="portfolio-work">
     <div class="container">
         <div class="row">
+            <h3>Typography</h3>
+            <hr>
             {% for project in site.data.artwork %}
             <div class = "col-md-4" id="artwork-content">
-                {% if project.type == photo %}
-                <a href="{{ project.link }}" target="blank">
-                        <img src="{{ project.img }}" alt="" height="100%">
-                </a>
-                {% else %}
-                <a href="{{ project.link }}" target="blank">
-                    <img src="{{ project.img }}" alt="" width="100%">
-                </a>
-                {% endif %}
+                <img src="{{ project.img }}" alt="" width="100%">
                 <span>
                     <h2>{{ project.title }}</h2>
                     <small>{{ project.content }}</small>
                 </span>
             </div>
             {% endfor %}
+
+        </div>
+        <div class="row">
+            <h3>Videos | <small><a href="https://www.youtube.com/channel/UC4BXi9vrZ-065DkYPABNhyw" target="blank"><i class="fab fa-youtube"></i> YouTube Channel</i></a></small></h3>
+            <hr>
+            <div class = "col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zslfnvbApaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "col-md-6"  id="artwork-content">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5vj80s6MkAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Photography | <small><a href="https://500pix.com/agentlee" target="blank"><i class="fab fa-500px"></i> 500px Page</a></small></h3>
+            <hr>
+            <img src="https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/thumb-summertime.png">
         </div>
     </div>
 </section>
