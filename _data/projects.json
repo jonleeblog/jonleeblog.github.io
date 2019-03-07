@@ -15,7 +15,7 @@
         "img" : "img/thumbs/thumb_teachin.png",
         "title" : "ScavengAR Hunt",
         "link" : "/projects/teachin.html",
-        "content" : "AR scavenger hunt made for Penn's 2018 Teach-In Event"
+        "content" : "AR scavenger hunt app (iOS and Android) made for Penn's 2018 Teach-In Event made in C# and Unity"
     },
     {
         "img" : "img/thumbs/thumb_staywoke.png",
