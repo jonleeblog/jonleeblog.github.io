@@ -17,8 +17,8 @@ title: Jon Lee | Graphics Engineer
 email: jonathanhklee@gmail.com
 description: "Jon Lee - Graphics Engineer"
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://leejon.net" # the base hostname & protocol for your site, e.g. http://example.com'
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://leejon.net" # the base hostname & protocol for your site, e.g. http://example.com'
+# url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: agentlee927
 github_username:  agentlee
 
