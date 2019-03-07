@@ -10,5 +10,13 @@
     {
         "title" : "Stanford Dragon",
         "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/stanford.png"
+    },
+    {
+        "title" : "Lucy",
+        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/lucy_20_8.png"
+    },
+    {
+        "title" : "Constructive Solid Geometry (Boolean Operations)",
+        "img" : "https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/csg_sphere_diff.png"
     }
 ]

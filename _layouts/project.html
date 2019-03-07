@@ -11,6 +11,9 @@ layout: default
         <hr>
         {% endif %}
 
+        {% if page.url == "/projects/mcpt.html" %}
+            {{ content }}
+        {% else %}
         <div class="row">
             <div class="col-md-6">
                 <div class="block">
@@ -34,5 +37,7 @@ layout: default
                 </div>
             </div>
         </div>
+
+        {% endif %}
     </div>
 </section>

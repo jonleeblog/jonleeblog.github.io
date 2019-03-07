@@ -6,13 +6,84 @@ carousel: true
 repo: https://github.com/agentlee/pathtracer
 ---
 
-<p>
-    Path Tracing is a rendering technique to generate images from 3D scenes as realistically as possible. Path tracing utilizes
-    an estimation method called Monte Carlo estimation to approximate the light energy for a point from an arbitrary amount
-    of samples. This will allow the light contribution to converge towards a solution that solves the Light Transport Equation.
-</p>
 
-<p> 
-    My path tracer supports multiple importance sampling, global illumination, volumetric rendering, and BVH acceleration.
-</p>
-        
+            
+<div class="row">
+    <div class="col-md-6">
+        <div class="block">
+            {% if page.carousel == true %}
+            {% include portfolio/carousel.html %}
+            {% else %}
+            {% include portfolio/frame.html %}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="block">
+            <p>
+                Path Tracing is a rendering technique to generate images from 3D scenes as realistically as possible. Path tracing utilizes
+                an estimation method called Monte Carlo estimation to approximate the light energy for a point from an arbitrary amount
+                of samples. This will allow the light contribution to converge towards a solution that solves the Light Transport Equation.
+            </p>
+            
+            <p> 
+                My path tracer supports multiple importance sampling, global illumination, volumetric rendering, and BVH acceleration.
+            </p>
+                    
+            
+        </div>
+
+        <div class="block"></div>
+            {% include portfolio/projectlinks.html %}
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Adaptive Sampling</h3>
+    <div class="col-md-6">
+        <div class="block">
+            <p> 
+                I've also written an adaptive sampling feature where the variance gets calculated for each pixel and if the variance
+                is outside a certain threshold, the pixel gets resampled. This led to faster render times (less samples per pixel) and less noisy renders.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="block">
+            <h4>High variance</h4>
+            <img src="https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/variance/highvar.png" width="100%">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="block">
+            <h4>Low variance</h4>
+            <img src="https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/variance/lowvar.png" width="100%">
+        </div>
+    </div>
+
+    <hr>
+<!-- 
+    <h3>Volumetric Rendering</h3>
+    <div class="col-md-6">
+        <div class="block">
+            <p> 
+                I've also written an adaptive sampling feature where the variance gets calculated for each pixel and if the variance
+                is outside a certain threshold, the pixel gets resampled. This led to faster render times (less samples per pixel) and less noisy renders.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="block">
+            <h4>High variance</h4>
+            <img src="https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/variance/highvar.png" width="100%">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="block">
+            <h4>Low variance</h4>
+            <img src="https://raw.githubusercontent.com/AgentLee/agentlee.github.io/master/images/mcpt/variance/lowvar.png" width="100%">
+        </div>
+    </div> -->
+</div>
