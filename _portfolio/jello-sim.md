@@ -6,7 +6,7 @@ order: 5
 sort_by: order
 
 header:
-  teaser: https://leejon.net/img/thumbs/thumb_jello.png
+  teaser: /images/thumb/jello.png
 
 author_profile: true
 sidebar: true

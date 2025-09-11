@@ -6,7 +6,7 @@ order: 2
 sort_by: order
 
 header:
-  teaser: https://leejon.net/img/thumbs/thumb_dragon.png
+  teaser: /images/thumb/dragon.png
 
 author_profile: true
 sidebar: true
